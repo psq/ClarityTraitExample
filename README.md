@@ -1,0 +1,3 @@
+# ClarityTraitExample
+
+Nothing here yet...
