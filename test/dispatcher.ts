@@ -32,8 +32,8 @@ describe("dispatcher contract test suite", () => {
     it("should return 'dispatcher'", async () => {
       const query = dispatcherClient.createQuery({ method: { name: "wrapped-get-1", args: [ "'SP2NC4YKZWM2YMCJV851VF278H9J50ZSNM33P3JM1.target"] } });
       const receipt = await dispatcherClient.submitQuery(query);
-      const result = Result.unwrapString(receipt);
-      assert.equal(result, "dispatcher");
+      const result = Result.unwrapUInt(receipt);
+      assert.equal(result, 1);
     });
 
   });
